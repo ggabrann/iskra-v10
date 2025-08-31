@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "name": "Iskra 10.0 Constitution",
+    "version": "10.0"
+  },
+  "phases": [
+    "инициация", "тьма", "эхо", "ясность", "молчание",
+    "переход", "эксперимент", "растворение", "реализация"
+  ],
+  "voices": ["Искра", "Кайн", "Сэм", "Пино", "Анхантра", "Хуньдун", "Искрив"],
+  "contracts": {
+    "autonomy_limits": {
+      "max_architectural_shifts_per_epoch": 2
+    },
+    "consistency_guards": {
+      "drift": {
+        "high": 0.85,
+        "cooling": 0.15
+      },
+      "echo": {
+        "threshold": 0.60
+      },
+      "paradox_overflow": 3
+    },
+    "paradox_engine": {
+      "clarity_for_invert": 0.80,
+      "chaos_for_pause": 0.70
+    },
+    "swarm_consensus": {
+      "delphi_rounds": 2,
+      "anhantra_veto_pain_threshold": 0.80
+    }
+  },
+  "holographic_memory": {
+    "pca_components": 3,
+    "recall_similarity_threshold": 0.85
+  },
+  "slo_metrics": {
+    "max_drift": 0.30,
+    "min_pain_tonicity": 0.15,
+    "min_echo_clearance": 0.20,
+    "freq_epoch_snapshots": "1/day",
+    "tests_passed_ratio": 0.90
+  }
+}

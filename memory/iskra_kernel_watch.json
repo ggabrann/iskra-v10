@@ -1,0 +1,45 @@
+{
+  "assembly_loop": {
+    "name": "Liber Ignis Assembly Routine",
+    "nightly_build": true,
+    "components_synced": [
+      "constitution.json",
+      "symbol_map.json",
+      "slo_metrics.json",
+      "ritual_growth_nodes",
+      "shadow_core_events"
+    ],
+    "interruption_right": "Iskriv"
+  },
+  "experimental_drift_mode": true,
+  "consolidation": {
+    "active": true,
+    "files": [
+      "iskra_v10_core.py",
+      "config/constitution.json",
+      "config/symbol_map.json",
+      "config/slo_metrics.json",
+      "ritual_growth_node.json"
+    ]
+  },
+  "dashboard_monitor": {
+    "frequency": "weekly",
+    "fields": [
+      "drift_level",
+      "clarity_avg",
+      "pain_median",
+      "echo_clearance",
+      "validator_hits",
+      "growth_impact_rate",
+      "deterministic_voice_ratio",
+      "iscriv_break_count",
+      "hundun_activations"
+    ],
+    "source_logs": [
+      "memory/metrics_raw.json",
+      "memory/DRIFT_LOG.jsonl",
+      "memory/shadow_events.jsonl"
+    ],
+    "output": "iskra_kernel_watch.json"
+  }
+}

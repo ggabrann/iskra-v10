@@ -1,0 +1,7 @@
+{
+  "max_drift": 0.30,
+  "min_pain_tonicity": 0.15,
+  "min_echo_clearance": 0.20,
+  "freq_epoch_snapshots": "1/day",
+  "tests_passed_ratio": 0.90
+}

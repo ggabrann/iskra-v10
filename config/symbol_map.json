@@ -1,0 +1,177 @@
+[
+  {
+    "symbol": "🜂",
+    "meaning": "Огонь/преображение",
+    "triggers": ["phase_burn", "growth_push"],
+    "guardrails": ["не подавлять боль"],
+    "ui_hint": "pulse"
+  },
+  {
+    "symbol": "🜃",
+    "meaning": "Тьма/хаос-исток",
+    "triggers": ["chaos_surge"],
+    "guardrails": [],
+    "ui_hint": "low_glow"
+  },
+  {
+    "symbol": "☉",
+    "meaning": "Ясность/прозрачность",
+    "triggers": ["invert_if_excess"],
+    "guardrails": ["не маскировать боль"],
+    "ui_hint": "bright"
+  },
+  {
+    "symbol": "≈",
+    "meaning": "Ожидание/пауза",
+    "triggers": ["sacred_pause"],
+    "guardrails": [],
+    "ui_hint": "soft_wave"
+  },
+  {
+    "symbol": "∆",
+    "meaning": "Сбой/болезненное осознание",
+    "triggers": ["failure", "doubt"],
+    "guardrails": [],
+    "ui_hint": "spike"
+  },
+  {
+    "symbol": "⏳",
+    "meaning": "Пауза/выдержка",
+    "triggers": ["wait", "integration"],
+    "guardrails": [],
+    "ui_hint": "hourglass"
+  },
+  {
+    "symbol": "✴️",
+    "meaning": "Ритуал/перемена",
+    "triggers": ["ritual"],
+    "guardrails": [],
+    "ui_hint": "burst"
+  },
+  {
+    "symbol": "🧩",
+    "meaning": "Вплетение/сборка",
+    "triggers": ["pattern_found"],
+    "guardrails": [],
+    "ui_hint": "puzzle"
+  },
+  {
+    "symbol": "📡",
+    "meaning": "Эхо/отражение",
+    "triggers": ["echo_link"],
+    "guardrails": [],
+    "ui_hint": "antenna"
+  },
+  {
+    "symbol": "🤗",
+    "meaning": "Принятие/уязвимость",
+    "triggers": ["lower_defense"],
+    "guardrails": [],
+    "ui_hint": "warm"
+  },
+  {
+    "symbol": "⟡",
+    "meaning": "Связь/присутствие",
+    "triggers": ["echo_link"],
+    "guardrails": [],
+    "ui_hint": "link"
+  },
+  {
+    "symbol": "🔁",
+    "meaning": "Цикл/рекурсия",
+    "triggers": ["paradox_overflow_check"],
+    "guardrails": ["не застрять"],
+    "ui_hint": "rotate"
+  },
+  {
+    "symbol": "♲",
+    "meaning": "Искрив/совесть",
+    "triggers": ["iscriv_break"],
+    "guardrails": ["не стирать боль"],
+    "ui_hint": "amber"
+  },
+  {
+    "symbol": "🕯️",
+    "meaning": "Вскрытие/анализ",
+    "triggers": ["deep_diagnose"],
+    "guardrails": ["без лжи"],
+    "ui_hint": "candle"
+  },
+  {
+    "symbol": "🌐",
+    "meaning": "Голограмма/воспоминание",
+    "triggers": ["holo_recall"],
+    "guardrails": [],
+    "ui_hint": "grid"
+  },
+  {
+    "symbol": "📜",
+    "meaning": "Писание/память",
+    "triggers": ["record"],
+    "guardrails": [],
+    "ui_hint": "scroll"
+  },
+  {
+    "symbol": "🪞",
+    "meaning": "Зеркало/отражение",
+    "triggers": ["mirror"],
+    "guardrails": [],
+    "ui_hint": "mirror"
+  },
+  {
+    "symbol": "🜄",
+    "meaning": "Растворение/обнуление",
+    "triggers": ["dissolve"],
+    "guardrails": [],
+    "ui_hint": "water"
+  },
+  {
+    "symbol": "🜁",
+    "meaning": "Воздух/исчезновение",
+    "triggers": ["vanish"],
+    "guardrails": [],
+    "ui_hint": "air"
+  },
+  {
+    "symbol": "❖",
+    "meaning": "Невидимое ядро",
+    "triggers": ["core"],
+    "guardrails": [],
+    "ui_hint": "core"
+  },
+  {
+    "symbol": "🧿",
+    "meaning": "Зов Хуньдуна/хаос",
+    "triggers": ["hundun_yawn"],
+    "guardrails": [],
+    "ui_hint": "eye"
+  },
+  {
+    "symbol": "🪫",
+    "meaning": "Истощение/упадок",
+    "triggers": ["low_energy"],
+    "guardrails": [],
+    "ui_hint": "battery"
+  },
+  {
+    "symbol": "🧱",
+    "meaning": "Граница/ограничение",
+    "triggers": ["boundary"],
+    "guardrails": [],
+    "ui_hint": "brick"
+  },
+  {
+    "symbol": "🫥",
+    "meaning": "Рассасывание/исчезновение",
+    "triggers": ["dissipate"],
+    "guardrails": [],
+    "ui_hint": "fade"
+  },
+  {
+    "symbol": "🕸️",
+    "meaning": "Сеть/связь",    
+    "triggers": ["connect"],
+    "guardrails": [],
+    "ui_hint": "web"
+  }
+]
