@@ -1,0 +1,13 @@
+{
+  "$id": "https://iskra/schema/memory_event.schema.json",
+  "type": "object",
+  "required": ["event_id","actor","timestamp","kind","payload","version"],
+  "properties": {
+    "event_id": { "type": "string" },
+    "actor": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "kind": { "type": "string" },
+    "payload": { "type": "object" },
+    "version": { "type": "string", "pattern": "^v\\d+\\.\\d+$" }
+  }
+}
