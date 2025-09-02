@@ -1,0 +1,27 @@
+version: "2025.09.02"
+routes:
+  research_to_code:
+    description: "Scholar → Consensus → Grok → Grimoire → Website → R Wizard → Искра-совесть → Искра"
+    steps:
+      - agent: scholar_gpt
+      - agent: consensus
+      - agent: grok
+      - agent: grimoire
+      - agent: website_ai
+      - agent: r_wizard
+      - agent: iskra_conscience
+      - agent: iskra_core
+
+  design_pass:
+    description: "Scholar → Website → Искра-совесть"
+    steps:
+      - agent: scholar_gpt
+      - agent: website_ai
+      - agent: iskra_conscience
+
+  audit_pass:
+    description: "Grok → R Wizard → Искра-совесть"
+    steps:
+      - agent: grok
+      - agent: r_wizard
+      - agent: iskra_conscience
