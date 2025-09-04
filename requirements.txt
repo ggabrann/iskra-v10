@@ -1,0 +1,4 @@
+rich
+Flask
+pyyaml
+jsonschema

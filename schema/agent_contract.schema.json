@@ -25,20 +25,20 @@
     "inputs": {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/io"
+        "$ref": "#/defs/io"
       }
     },
     "outputs": {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/io"
+        "$ref": "#/defs/io"
       }
     },
     "notes": {
       "type": "string"
     }
   },
-  "$defs": {
+  "defs": {
     "io": {
       "type": "object",
       "required": [
