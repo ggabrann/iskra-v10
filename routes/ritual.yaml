@@ -1,4 +1,4 @@
-version: "2025.09.04"
+version: "2025.09.02"
 
 routes:
   research_to_code:
@@ -11,17 +11,3 @@ routes:
       - role: specialist/analysis
       - agent: iskra_kinescreef
       - agent: iskra_core
-
-  design_pass:
-    description: "research → design → Искра·kinescreef"
-    steps:
-      - role: specialist/research
-      - role: specialist/design
-      - agent: iskra_kinescreef
-
-  audit_pass:
-    description: "audit → analysis → Искра·kinescreef"
-    steps:
-      - role: specialist/audit
-      - role: specialist/analysis
-      - agent: iskra_kinescreef
