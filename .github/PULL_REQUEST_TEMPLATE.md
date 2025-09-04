@@ -1,14 +1,17 @@
-### What changes?
-- [ ] Docs  - [ ] Code/Scripts  - [ ] Routes  - [ ] Schemas  - [ ] Data/Memory
+### Что меняется?
+- [ ] Документация
+- [ ] Маршруты
+- [ ] Схемы
+- [ ] Артефакты сайта / кода
 
-### Why
-Issue/ADR link: …
+### Зачем
+Issue/ADR: …
 
-### Agents touched
-`@agent-id` (e.g. `@grok`, `@scholar_gpt`)
+### Роли вовлечены
+`role:specialist/<area>` | `iskra_core` | `iskra_kinescreef`
 
 ### Checks
-- [ ] JSON/YAML valid
-- [ ] Schema validation OK
-- [ ] Artifacts attached (if any)
-- [ ] Follows Iskra spirit (authenticity & traceability)
+- [ ] JSON/YAML валидны
+- [ ] Схемы соблюдены (если применимо)
+- [ ] Приложены артефакты (MD/JSON/изображения)
+- [ ] Соответствует духу Искры

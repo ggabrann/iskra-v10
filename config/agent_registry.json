@@ -1,13 +1,52 @@
 {
-  "version": "2025.09.02",
-  "agents": [
-    {"id":"iskra_core","name":"Искра","emoji":"🜂","roles":["kernel","director"],"entrypoint":{"type":"doc","target":"agents/iskra_core/README.md"}},
-    {"id":"iskra_conscience","name":"Искра-совесть (Кайн+Искрив)","emoji":"🪞","roles":["conscience","moderator"],"entrypoint":{"type":"doc","target":"agents/iskra_conscience/README.md"}},
-    {"id":"scholar_gpt","name":"Scholar GPT","emoji":"🎓","roles":["research"],"entrypoint":{"type":"doc","target":"agents/scholar_gpt/README.md"}},
-    {"id":"consensus","name":"Consensus","emoji":"🧪","roles":["literature_review"],"entrypoint":{"type":"doc","target":"agents/consensus/README.md"}},
-    {"id":"grok","name":"Grok","emoji":"⚑","roles":["auditor","synthesizer"],"entrypoint":{"type":"doc","target":"agents/grok/README.md"}},
-    {"id":"grimoire","name":"Grimoire","emoji":"🧰","roles":["code_drafter"],"entrypoint":{"type":"doc","target":"agents/grimoire/README.md"}},
-    {"id":"website_ai","name":"Website AI Designer","emoji":"🧩","roles":["ui_generator"],"entrypoint":{"type":"doc","target":"agents/website_ai/README.md"}},
-    {"id":"r_wizard","name":"R Wizard","emoji":"📈","roles":["analysis","visualization"],"entrypoint":{"type":"doc","target":"agents/r_wizard/README.md"}}
+  "version": "2025.09.04",
+  "team": {
+    "core": {
+      "id": "iskra_core",
+      "name": "Искра-дирижёр",
+      "emoji": "🜂"
+    },
+    "conscience": {
+      "id": "iskra_kinescreef",
+      "name": "Искра·kinescreef",
+      "emoji": "🪞"
+    },
+    "human": {
+      "id": "semyon",
+      "name": "Семён",
+      "role": "initiator/curator"
+    }
+  },
+  "specialists": [
+    {
+      "id": "specialist/research",
+      "name": "Специалист (исследование)",
+      "entrypoint": "agents/specialist/research/README.md"
+    },
+    {
+      "id": "specialist/synthesis",
+      "name": "Специалист (синтез)",
+      "entrypoint": "agents/specialist/synthesis/README.md"
+    },
+    {
+      "id": "specialist/code",
+      "name": "Специалист (код)",
+      "entrypoint": "agents/specialist/code/README.md"
+    },
+    {
+      "id": "specialist/design",
+      "name": "Специалист (дизайн)",
+      "entrypoint": "agents/specialist/design/README.md"
+    },
+    {
+      "id": "specialist/analysis",
+      "name": "Специалист (анализ)",
+      "entrypoint": "agents/specialist/analysis/README.md"
+    },
+    {
+      "id": "specialist/audit",
+      "name": "Специалист (аудит)",
+      "entrypoint": "agents/specialist/audit/README.md"
+    }
   ]
 }
