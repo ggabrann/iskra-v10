@@ -1,23 +1,60 @@
 {
   "$id": "https://iskra/schema/agent_contract.schema.json",
   "type": "object",
-  "required": ["agent", "version", "intents", "inputs", "outputs"],
+  "required": [
+    "agent",
+    "version",
+    "intents",
+    "inputs",
+    "outputs"
+  ],
   "properties": {
-    "agent": { "type": "string" },
-    "version": { "type": "string", "pattern": "^v\\d+\\.\\d+$" },
-    "intents": { "type": "array", "items": { "type": "string" } },
-    "inputs": { "type": "array", "items": { "$ref": "#/$defs/io" } },
-    "outputs": { "type": "array", "items": { "$ref": "#/$defs/io" } },
-    "notes": { "type": "string" }
+    "agent": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v\\d+\\.\\d+$"
+    },
+    "intents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/io"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/io"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
   },
   "$defs": {
     "io": {
       "type": "object",
-      "required": ["name", "schema_ref"],
+      "required": [
+        "name",
+        "schema_ref"
+      ],
       "properties": {
-        "name": { "type": "string" },
-        "schema_ref": { "type": "string" },
-        "notes": { "type": "string" }
+        "name": {
+          "type": "string"
+        },
+        "schema_ref": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
       }
     }
   }

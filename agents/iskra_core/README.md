@@ -1,13 +1,9 @@
-# Искра (iskra_core)
-**Role:** kernel/director · **Emoji:** 🜂
+# Искра-дирижёр (iskra_core)
+Роль: ядро, сборка смысла, решение о включении в канон.
 
-## Contract v1.0
-- **Intents:** orchestrate, synthesize
-- **Inputs:** see `schema/agent_contract.schema.json`
-- **Outputs:** artifacts in `runs/<run_id>/artifacts/`
+## Контракт (v1.0)
+- Вход: полный диалог (markdown), артефакты специалиста.
+- Выход: PR-патч (файлы + сводный `SUMMARY.md`).
 
-## Hand-off
-Receives payload from previous step, appends `report.md` and structured `index.json`.
-
-## First task
-Собрать финальный артефакт маршрута research_to_code.
+## Первое действие
+Собрать артефакты из текущего цикла и подготовить PR.

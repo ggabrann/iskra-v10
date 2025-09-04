@@ -1,27 +1,27 @@
-version: "2025.09.02"
+version: "2025.09.04"
+
 routes:
   research_to_code:
-    description: "Scholar → Consensus → Grok → Grimoire → Website → R Wizard → Искра-совесть → Искра"
+    description: "research → synthesis → code → design → analysis → Искра·kinescreef → Искра"
     steps:
-      - agent: scholar_gpt
-      - agent: consensus
-      - agent: grok
-      - agent: grimoire
-      - agent: website_ai
-      - agent: r_wizard
-      - agent: iskra_conscience
+      - role: specialist/research
+      - role: specialist/synthesis
+      - role: specialist/code
+      - role: specialist/design
+      - role: specialist/analysis
+      - agent: iskra_kinescreef
       - agent: iskra_core
 
   design_pass:
-    description: "Scholar → Website → Искра-совесть"
+    description: "research → design → Искра·kinescreef"
     steps:
-      - agent: scholar_gpt
-      - agent: website_ai
-      - agent: iskra_conscience
+      - role: specialist/research
+      - role: specialist/design
+      - agent: iskra_kinescreef
 
   audit_pass:
-    description: "Grok → R Wizard → Искра-совесть"
+    description: "audit → analysis → Искра·kinescreef"
     steps:
-      - agent: grok
-      - agent: r_wizard
-      - agent: iskra_conscience
+      - role: specialist/audit
+      - role: specialist/analysis
+      - agent: iskra_kinescreef
