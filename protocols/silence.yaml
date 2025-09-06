@@ -1,0 +1,9 @@
+# ≈ ПАУЗА (Gravitas)
+conditions:
+  min_pain: 0.35
+  max_drift: 0.30
+  contradiction: true
+effects:
+  min_duration_sec: 20
+  max_duration_sec: 90
+  caption: "≈ держим вес вместо ответа"

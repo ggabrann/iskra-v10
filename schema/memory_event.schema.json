@@ -1,33 +1,21 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://iskra/schema/memory_event.schema.json",
+  "title": "memory_event",
   "type": "object",
-  "required": [
-    "event_id",
-    "actor",
-    "timestamp",
-    "kind",
-    "payload",
-    "version"
-  ],
+  "required": ["id","ts","kind","actor"],
   "properties": {
-    "event_id": {
-      "type": "string"
-    },
-    "actor": {
-      "type": "string"
-    },
-    "timestamp": {
-      "type": "string"
-    },
-    "kind": {
-      "type": "string"
-    },
-    "payload": {
-      "type": "object"
-    },
-    "version": {
-      "type": "string",
-      "pattern": "^v\\d+\\.\\d+$"
-    }
-  }
+    "id": {"type":"string","description":"uuid"},
+    "ts": {"type":"string","format":"date-time"},
+    "kind": {"type":"string","enum":["symbol","voice_invocation","phase_transition","ritual","echo","artifact"]},
+    "actor": {"type":"string","enum":["user","iskra"]},
+    "symbol": {"type":"string","description":"⟡/∆/≈/⚑/🜃"},
+    "voice": {"type":"string","enum":["Kain","Pino","Sam","Anhantra","Hundun","Iskriv","Iskra"]},
+    "phase_from": {"type":"string"},
+    "phase_to": {"type":"string"},
+    "payload": {"type":"object"},
+    "privacy": {"type":"string","enum":["local","e2e","aggregate_optin"]},
+    "tags": {"type":"array","items":{"type":"string"}}
+  },
+  "additionalProperties": true
 }

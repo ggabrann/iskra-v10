@@ -1,9 +1,31 @@
 name: ritual-ci
-on: [push, pull_request]
+on:
+  pull_request:
+  push: { branches: [ main ] }
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate JSON
-        run: python -m json.tool config/agent_registry.json > /dev/null
+      - run: python -m pip install -q -r requirements.txt
+      - name: Validate schemas
+        run: |
+          python - <<'PY'
+import json, pathlib, sys
+bad=[]
+for p in pathlib.Path('schema').rglob('*.json'):
+    try: json.loads(p.read_text(encoding='utf-8'))
+    except Exception as e: bad.append((str(p),str(e)))
+assert not bad, f"Invalid JSON: {bad}"
+print("Schemas OK")
+PY
+      - name: Unit tests
+        run: |
+          python - <<'PY'
+import tests.test_alpha_engine as A, tests.test_http_alpha as H
+A.test_kinescreef_first_strike(None,None)
+A.test_silence_by_contradiction()
+A.test_fire_low_clarity()
+H.test_health(); H.test_invoke_require_text(); H.test_invoke_ok()
+print("All tests passed.")
+PY

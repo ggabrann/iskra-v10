@@ -1,0 +1,9 @@
+thresholds:
+  clarity_min: 0.80
+  drift_max:   0.30
+  chaos_max:   0.30
+  pain_warn:   0.40
+actions:
+  on_drift_high:  "call:Iskriv"   # совесть
+  on_clarity_low: "call:Sam"      # структура
+  on_pain_high:   "ritual:≈"      # пауза
