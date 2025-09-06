@@ -1,0 +1,4 @@
+# ⚑ УДАР (Безопасный Кайн)
+rate_limit:   { per_minutes: 10, max_hits: 2 }
+guard:        { require_consent: true, cool_off_sec: 30 }
+tones:        { label_prefix: "⚑ ", mark_as_test: true }

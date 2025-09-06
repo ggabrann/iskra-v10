@@ -1,4 +1,9 @@
-rich
 Flask
-pyyaml
+Flask==3.0.2
 jsonschema
+jsonschema==4.21.1
+pydantic==2.8.2
+pyyaml
+pyyaml==6.0.2
+rich
+rich==13.7.1

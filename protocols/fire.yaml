@@ -1,0 +1,8 @@
+# 🜃 СБРОС (Огонь)
+triggers:
+  high_chaos: 0.28
+  low_clarity: 0.62
+  shadow_pulse: true
+confirm:
+  required: true
+  prompt: "Подтверди сброс цикла (🜃). Это изменит ритм."
