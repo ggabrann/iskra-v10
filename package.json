@@ -1,0 +1,14 @@
+{
+  "name": "iskra-v10",
+  "private": true,
+  "version": "12.0.0",
+  "license": "MIT",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint"
+  },
+  "workspaces": ["packages/*", "apps/*", "infra/*"]
+}

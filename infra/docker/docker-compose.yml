@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  iskra:
+    build: ..
+    ports:
+      - "3000:3000"
+      - "7070:7070"
+    environment:
+      - API_PORT=7070
+      - NEXT_PUBLIC_API_URL=http://localhost:7070
+    volumes:
+      - ..:/usr/src/app
