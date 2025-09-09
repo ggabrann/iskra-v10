@@ -1,17 +1,6 @@
 # RUN — запуск (monorepo)
-
-## Предусловия
-- Node.js 20+, pnpm 9+
-- (опционально) Docker
-
-## Установка
-npm i -g pnpm
+npm i -g pnpm || true
 pnpm i
-
-## Запуск
-pnpm --filter @iskra/api dev     # API http://localhost:7070
-pnpm --filter @iskra/web dev     # Web http://localhost:3000
-
-## Docker
-cd infra/docker
-docker compose up --build
+pnpm --filter @iskra/api dev     # 7070
+pnpm --filter @iskra/web dev     # 3000
+# Docker: cd infra/docker && docker compose up --build
