@@ -1,0 +1,5 @@
+{
+  "name":"@iskra/mobile","version":"12.0.0","private":true,
+  "dependencies":{"react":"18.2.0","react-native":"0.74.0","expo":"51.0.0","@iskra/core":"workspace:*","@iskra/ui":"workspace:*"},
+  "scripts":{"start":"echo 'Use Expo locally'"}
+}
