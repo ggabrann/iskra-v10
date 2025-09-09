@@ -1,4 +1,4 @@
-# RUN — запуск локально
+# RUN — запуск (monorepo)
 
 ## Предусловия
 - Node.js 20+, pnpm 9+
@@ -8,13 +8,10 @@
 npm i -g pnpm
 pnpm i
 
-## Запуск сервисов
+## Запуск
 pnpm --filter @iskra/api dev     # API http://localhost:7070
-pnpm --filter @iskra/web dev     # WEB http://localhost:3000
+pnpm --filter @iskra/web dev     # Web http://localhost:3000
 
-## Дымовые тесты ядра
-pnpm --filter @iskra/core build && pnpm --filter @iskra/core test
-
-## Docker (web+api)
+## Docker
 cd infra/docker
 docker compose up --build
