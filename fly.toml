@@ -1,0 +1,21 @@
+app = "iskra-core-CHANGE-ME"
+primary_region = "ams"
+[build]
+  dockerfile = "Dockerfile"
+[env]
+  PORT = "8080"
+  APP_MODULE = "server:app"
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 50
+    soft_limit = 25
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
